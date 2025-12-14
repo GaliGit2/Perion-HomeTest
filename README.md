@@ -1,7 +1,7 @@
 ## Perion - Automation Home Test ##
 
 This project contains UI automation test and manual test cases.
-The tests are written in Python using Behave (BDD) and Selenium WebDriver, and follow the Page Object Model (POM).
+The tests are written in Python using Behave (BDD) and Selenium WebDriver.
 
 ## Instructions ## 
 1. Clone the repository:

@@ -1,5 +1,5 @@
 from behave import when, then
-from utils.config import ROUND_DECIMALS_POINT, EMPTY_CART_ITEMS_COUNT, CHECKOUT_CSV_PATH, EMPTY_CART_Total
+from utils.config import ROUND_DECIMALS_POINT, EMPTY_CART_ITEMS_COUNT, CHECKOUT_CSV_PATH, EMPTY_CART_TOTAL
 from utils.data_loader import load_checkout_data
 from pages.cart_page import CartPage
 from pages.checkout_step_one_page import CheckoutStepOnePage
@@ -62,4 +62,4 @@ def step_checkout_zero_items(context):
 @then("the item total should be 0.00")
 def step_item_total_zero(context):
     total = round(context.checkout_two.get_item_total(), ROUND_DECIMALS_POINT)
-    assert total == EMPTY_CART_Total, f"Expected item total {EMPTY_CART_Total}, got {total}"
+    assert total == EMPTY_CART_TOTAL, f"Expected item total {EMPTY_CART_TOTAL}, got {total}"
